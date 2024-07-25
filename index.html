@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task</title>
+    <link rel="icon" type="image/x-icon" href="./tts-assets/Next-logo.png">
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/96374149a4.js" crossorigin="anonymous"></script>
+    <!--scss-->
+    <link rel="stylesheet" href="style.css">
+    <!--font-->
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+
+    <!--Navigation-->
+    <nav class="bg-white shadow-sm p-0 mb-0">
+        <div class="d-flex bd-highlight mb-0">
+            <div class="p-1">
+                <a class="navbar-brand" href="#">
+                    <img src="./tts-assets/TTN-logo.png" alt="Think Talent Next" width="110" height="35">
+                </a>
+            </div>
+            <div class="me-auto p-3 bd-highlight" id="list"><i class="fa-solid fa-bars"></i></div>
+            <div class="p-3 bd-highlight" id="bell"><i class="fa-solid fa-bell"></i></div>
+            <div class="p-2 bd-highlight" id="user"><i class="fa-solid fa-circle-user"></i></div>
+        </div>
+    </nav>
+
+    <!--menu-->
+    <div class="d-flex">
+        
+            
+                <aside>
+                    <ul>
+                        <li><i class="fa-solid fa-file-lines"></i>Content Manageme..</li>
+                        <li><i class="fa-solid fa-clipboard-user"></i>User Management</li>
+                        <li><i class="fa-solid fa-border-all"></i>Manage Groups</li>
+                        <li><i class="fa-solid fa-user-gear"></i>Manage Admins</li>
+                        <li class="active"><i class="fa-solid fa-chart-simple"></i>PMS Dashboard</li>
+                        <li><i class="fa-solid fa-gear"></i>Settings</li>
+                        <li><i class="fa-solid fa-reply"></i>Back to all Accounts</li>
+                    </ul>
+                </aside>
+            
+        
+
+            <!--hero-->
+            <hero class="flex-grow-1">
+                
+                
+                <h5><b>Performance Management Dashboard</b></h5>
+                <div>
+                    <span id="active">Manage Participants</span>
+                    <span>Manage Positions</span>
+                    <span>Analytics</span>
+                </div>
+
+                <!--main-->
+                <span style="margin-left: 305px; margin-top: 3px; margin-bottom: 0px;" class="rt">Stats - count of participants</span>
+                <ul class="d-flex bd-highlight gap-1 mx-auto">
+                    <li class="shadow-sm" id="ts">
+                        <div><i class="fa-solid fa-square-poll-horizontal"></i>
+                            <div>Total Surveys
+                                <span>3</span></div><h6></h6></div>
+                    </li>
+                    <li class="shadow-sm" id="ns">
+                        <div><i class="fa-solid fa-square-xmark"></i>
+                            <div>Not Started 
+                                <span>1</span></div><h6></h6></div>
+                    </li>
+                    <li class="shadow-sm" id="ip">
+                        <div><i class="fa-brands fa-square-letterboxd"></i>
+                            <div>In-progress 
+                                <span>1</span></div><h6></h6></div>
+                    </li>
+                    <li class="shadow-sm" id="cl">
+                        <div><i class="fa-solid fa-square-check"></i>
+                            <div>Closed 
+                                <span>1</span></div><h6></h6></div>
+                    </li>
+                    <div>
+                        <select id="blue">
+                            <option>Actions</option>
+                        </select><br>
+                        <select id="white">
+                            <option>Emails</option>
+                        </select>
+                    </div>
+                </ul>
+                
+                
+
+                
+                <div class="shadow-sm p-1 info">
+                    <input type="checkbox" id="group">
+                    <label for="group">Group:</label>
+                    <span class="smallicon" style="margin-right: -5px;">&lt;group name&gt;</span>
+                    <i class="fa-solid fa-pencil smallicon" style="color: #cecece;"></i>
+                    <span class="smallicon">
+                        <i class="fa-solid fa-user-tie" style="margin-left: 150px;"></i>&lt;position name&gt;
+                        <i class="fa-solid fa-calendar-days" style="margin-left: 60px;"></i> &lt;cycle&gt;
+                        <span style="color: #37A3FE; margin-right: -1px; margin-left: 60px;">Target Date:</span>&lt;dd mm yy&gt;
+                        <i class="fa-regular fa-calendar-xmark" style="color: #e93574; padding-right: 30px;"></i>
+                    </span>
+                    <button id="pinkons">Not Started</button>
+                    <button class="toggles" class="dropdown-toggle"></button>
+                </div>
+
+
+
+                <div class="shadow-sm p-1 info">
+                    <input type="checkbox" id="group">
+                    <label for="group">Group:</label>
+                    <span class="smallicon" style="margin-right: -5px;">Product Manager (Jul-Sept 24)</span>
+                    <i class="fa-solid fa-pencil smallicon" style="color: #cecece;"></i>
+                    <span class="smallicon">
+                        <i class="fa-solid fa-user-tie" style="margin-left: 58px;"></i>&lt;position name&gt;
+                        <i class="fa-solid fa-calendar-days" style="margin-left: 60px;"></i> Jul-Sept 24
+                        <span style="color: #37A3FE; margin-right: -1px; margin-left: 50px;">Target Date:</span>30.06.24
+                    </span>
+                    <button id="greenons">Closed</button>
+                    <button class="toggles" class="dropdown-toggle"></button>
+
+                    <div class="rowsofgroup" style="background-color: aliceblue; margin-top: 2px;">Participant
+                        <span style="color: #e93574; padding-right: 50px;"> (Project)</span>Response</div>
+                    <div class="rowsofgroup">Amartya Amitav
+                        <span style="padding-left:105px;">2/5</span>
+                        <span class="bluetext">Manage Respondents</span>
+                        <span class="yellowtext"><i class="fa-solid fa-download"></i>Template</span>
+                        <span class="bluetext"><i class="fa-solid fa-download"></i>Report</span>
+                        <span class="vsmall"> Not Posted <i class="fa-solid fa-circle-info"></i></span>
+                    </div>
+                    <div class="rowsofgroup">Ipshita Rath
+                        <span style="padding-left:130px;">5/6</span>
+                        <span class="bluetext">Manage Respondents</span>
+                        <span class="yellowtext"><i class="fa-solid fa-download"></i>Template</span>
+                        <span class="bluetext"><i class="fa-solid fa-download"></i>Report</span>
+                        <span class="vsmall"> Posted on dd mmm yy <i class="fa-solid fa-circle-info"></i></span>
+                    </div>
+                    <div class="rowsofgroup">Shubhankar Sahoo
+                        <span style="padding-left:90px;">1/3</span>
+                        <span class="bluetext">Manage Respondents</span>
+                        <span class="yellowtext"><i class="fa-solid fa-download"></i>Template</span>
+                        <span class="bluetext"><i class="fa-solid fa-download"></i>Report</span>
+                        <span class="vsmall"> Posted on dd mmm yy <i class="fa-solid fa-circle-info"></i></span>
+                    </div>
+                    <div id="last" style="border-top: 1px solid #eee;">
+                        <div class="rt">Bring data of collapsable only when it is opened,
+                        only 1 collapsable open at once</div>
+                        <div class="rt" style="margin: -2px ">Template is always downloadable.<br>
+                            Report can be downloaded only if group is closed.
+                        </div>
+                        <div class="vsmall">10 rows <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="vsmall"><i class="fa-solid fa-backward-step"></i>    <i class="fa-solid fa-chevron-left"></i>       1-10 of 20      <i class="fa-solid fa-chevron-right"></i>     <i class="fa-solid fa-forward-step"></i></div>
+                    </div>
+                </div>
+            
+            
+            <button id="yellons">In-progress</button>
+            </hero>
+
+    </div>
+</body>
+</html>
